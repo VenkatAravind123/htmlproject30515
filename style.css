@@ -1,0 +1,98 @@
+/* Resetting default margin and padding for the list items */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Styling the navigation bar */
+  nav {
+    background-color: #333333;
+    border-radius:5px /* Change this to your desired background color */
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white; /* Change this to your desired text color */
+    transition:background-color , border-radius 0.15s;
+  }
+  
+  nav a:hover {
+    background-color: #13eb45;
+    border-radius:5px; /* Change this to your desired hover background color */
+  }
+  
+  
+  /* Centering the navigation links */
+  nav ul {
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between links */
+  }
+  
+  /* Making the navigation bar fixed at the top */
+  nav {
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Adding spacing between the header and the navigation bar */
+  h2 {
+    margin-bottom: 20px;
+  }
+   .button {
+    background-color: B6C4B6;
+    border-color:black;   
+    color: black;
+    padding: 15px 32px;
+    border-radius:2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:18px;
+    transition:background-color box-shadow 0.15s; 
+  }
+  .button:hover{
+    background-color:rgb(0, 0, 0);
+    color:B6C4B6;
+    box-shadow:5px 5px 10px rgb(33, 32, 32);
+
+  }
+  .button:active{
+    background-color:white;
+  }
+  
+  input[type=text],input[type=password],input[type=number],input[type=email],
+  select,input[type=date],textarea
+  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow:5px 5px 10px rgb(33, 32, 32);
+  }
+  
+  form{
+    border-radius: 10px;
+    padding:20px;
+    box-shadow: 5px 5px 10px #333333;
+    margin:0 auto;
+    width:400px;
+  }
+  label
+  {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bolder;
+  } 
