@@ -1,4 +1,5 @@
 <html>
+  
     <head>
         
         <title>MSWD</title>
@@ -19,24 +20,57 @@
 
       .navbar
       {
-        background-color:lightgray;
-        padding:10px;
+        background-color:#333333;
+        border-radius:5px;
+        top: 1;
+    width: 100%;
       }
-      body
+      .navbar a{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white; /* Change this to your desired text color */
+    transition:background-color , border-radius 0.15s;
+    
+        
+      }
+      .navbar a:hover{
+        background-color:#4caf50;
+        border-radius:5px;
+        
+      }
+      /* body
       {
         background-image:url("images/bgimage.jpg");
         background-repeat:no-repeat;
         background-size:cover;
+      } */
+      body{
+        background:linear-gradient(135deg,#1188d7,#05073a);
       }
-        form {
-      width: 300px;
+      .login-container{
+        width: 300px;
       margin: 0 auto;
+      height:200px;
       background-color: white;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align:center;
-    }
+      padding-bottom: 40px;
+      }
+      .title{
+    text-align:center;
+    font-size:1.5rem;
+    
+    font-weight:700;
+  }
+  .form{
+    margin-top:1.5rem;
+  }
   
     input[type="email"],
     input[type="password"] {
@@ -44,16 +78,20 @@
       padding: 10px;
       margin: 8px 0;
       box-sizing: border-box;
+      height:max-content;
       border:solid;
       border-radius:5px;
     }
-  
+  span{
+    font-size: 20px ;
+  }
     input[type="submit"],input[type="reset"] 
     {
       background-color: #4caf50;
       color: white;
       padding: 10px 15px;
       border: none;
+      font-size: 20;
       border-radius: 5px;
       cursor: pointer;
     }
@@ -66,8 +104,16 @@
       color: white;
       padding: 10px 15px;
       border: none;
+     text-decoration:none;
       border-radius: 5px;
       cursor: pointer;
+  }
+  .navbar ul{
+    text-align: center;
+  }
+  .navbar li{
+    margin-right:20px;
+    display: inline;
   }
     
 
@@ -80,25 +126,30 @@
         <h2 align="center" style="color:white">Student Information System</h2>
         
         <div class="navbar">
-        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
-        <a  href="registration.html">Registration</a>&nbsp;&nbsp;&nbsp;
-        <a href="login.html">Login</a>&nbsp;&nbsp;&nbsp;
-        <a href="contact.html">Contact Us</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://newerp.kluniversity.in/"  target="_blank">ERP</a>&nbsp;&nbsp;&nbsp;
+          <ul>
+        <li><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+        <li><a  href="registration.html">Registration</a>&nbsp;&nbsp;&nbsp;
+        <li><a href="login.html">Login</a>&nbsp;&nbsp;&nbsp;
+        <li><a href="contact.html">Contact Us</a>&nbsp;&nbsp;&nbsp;
+        <li><a href="https://newerp.kluniversity.in/"  target="_blank">ERP</a>&nbsp;&nbsp;&nbsp;
+      </ul>
       </div>
     
         <br/><br/>
-
-        <form method="post" action="studenthome.html">
-            Enter Email Address <input type="email" name="emailid" required/><br/>
-            Enter Password <input type="password" name="pwd" required/><br/>
+        <center>
+        <div class="login-container">
+          <div class="title">Login</div>
+          <form method="post" action="studenthome.html">
+            <span>Enter Email Address</span><input type="email" name="emailid" required/><br/>
+            <span>Enter Password</span><input type="password" name="pwd" required/><br/>
             <input type="submit" value="Login"/>
             <input type="reset" value="Clear"/>
-        </form>
-
+         </form>
+      </div>
+    </center>
         <br>
-        <p style="text-align:center;color:white">
-          New User ? <a href="registration.html" class="button">Register Here</a>
+        <p style="text-align:center;color:white;text-decoration:none;font-size: 20;">
+          New User ? <a href="registration.html" class="button">REGISTER HERE</a>
 
         </p>
     </body>

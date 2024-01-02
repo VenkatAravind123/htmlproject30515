@@ -4,13 +4,27 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <style>
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 10px 20px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
+    background-color:rgb(150, 221, 223);
+    color:black;
+    border-radius:20px;
     text-align: center;
     font-family: arial;
-    border: 1px solid black; /* Add a 1px solid border with a light gray color */
-    padding: 10px; /* Add some padding to the card content */
+    border: 1px solid black; 
+    padding: 10px;  
+    transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover{
+    transform:scale(1.05);
+}
+img{
+    border-radius:20px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
         </style>
     </head>
@@ -25,6 +39,7 @@
         </nav>
         <br>
         <p style="text-align:center;font-size:15pt;font-weight:bold">My Profile</p>
+        <center>
         <div class="card">
             <img src="images/aravind.jpg" width="100%" alt="Image Here"/></br>
             <h3>ID: 2200030515</h3>
@@ -33,7 +48,7 @@
             <address>Vijayawada,AP,India</address></br>
             <i>2200030515@kluniversity.in</i></br>
             <i>7993847898</i>
-
         </div>
+    </center>
     </body>
 </html>

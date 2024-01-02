@@ -4,11 +4,17 @@ ul, ol {
     padding: 0;
     list-style: none;
   }
-  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
   /* Styling the navigation bar */
   nav {
     background-color: #333333;
     border-radius:5px /* Change this to your desired background color */
+    
   }
   
   nav a {
@@ -37,15 +43,120 @@ ul, ol {
   
   /* Making the navigation bar fixed at the top */
   nav {
-    top: 0;
+    top: 1;
     width: 100%;
+
+  }
+
+  .container{
+    width: 20px;
+    height: 700px;
+   
+    padding:25px 30px;
+    border-radius:10px;
+    position:center;
+    background:linear-gradient(135deg,#1188d7,#05073a);
+    color:rgb(205, 251, 1);
+    text-transform: uppercase;
+  }
+  .container .heading{
+    padding-bottom: 10px;
+  }
+  form{
+     width:400px;
+   }
+   .heading{
+    font-size:25px;
+    text-align: center;
+
+  }
+  .button{
+    --color:#00A97F;
+    padding: 0.8em 0.7em;
+    background-color:transparent;
+    border-radius:.3em;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.5s;
+    font-weight:400;
+    font-size:17px;
+    border:1px solid;
+    font-family:inherit;
+    text-transform:uppercase;
+    color: var(--color);
+    z-index: 1;
+    
+  }
+
+   .button:hover {
+    background-color:rgb(15, 248, 6);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+      
+  
+  
+  .container form .card-details{
+    margin-top:25px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+
+  }
+  .card-d.card-box{
+    width:calc(100% / 2 - 20px);
+    margin-bottom:15px;
+    
+  }
+  span{
+    font-size: larger;
+  }
+  .rbut{
+    display:inline;
+    transition:width 5s height 5s color 4s;
+    gap:40px;
+    margin:10px;
+  }
+  .rbut:hover{
+    width:20px;
+    height:20px;
   }
   
+  /* .card-box .details{
+    display: block;
+    font-weight:500;
+    margin-bottom:5px;
+  } */
+  /* .card-d.card-box input{
+    height:50px;
+    width:50px;
+    outline:none;
+    border-radius:2px;
+    border:1px solid #fff;
+    padding-left: 15px;
+  font-size:16px;
+  border-bottom-width:2px;
+  transition:all 0.3s ease;
+  } */
+  /* .circal-f{
+    padding-top: 10px;
+    padding-bottom:15px;
+   
+  } */
+  /* .circal-f.circal-title{
+    font-weight: bold;
+    color:rgb(1, 14, 9);
+   
+  } */
   /* Adding spacing between the header and the navigation bar */
   h2 {
     margin-bottom: 20px;
   }
-   .button {
+
+   /* .button {
     background-color: B6C4B6;
     border-color:black;   
     color: black;
@@ -64,10 +175,19 @@ ul, ol {
     background-color:rgb(0, 0, 0);
     color:B6C4B6;
     box-shadow:5px 5px 10px rgb(33, 32, 32);
-
   }
   .button:active{
-    background-color:white;
+    background-color:rgb(255, 1, 1);
+  } */
+  body{
+   color:#96d20a;
+   background:linear-gradient(135deg,#0e3638,#0691dcca);
+   padding:10px;
+   height:100vh;
+   justify-content:center;
+   align-items:center;
+   
+
   }
   
   input[type=text],input[type=password],input[type=number],input[type=email],
@@ -83,16 +203,23 @@ ul, ol {
     box-shadow:5px 5px 10px rgb(33, 32, 32);
   }
   
-  form{
-    border-radius: 10px;
-    padding:20px;
-    box-shadow: 5px 5px 10px #333333;
-    margin:0 auto;
-    width:400px;
-  }
+  
   label
   {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    font-family:Arial;
+    font-size:19;
+    font-style:italic;
     font-weight: bolder;
   } 
+  .container{
+    background-color:#fff;
+    border-radius:30px;
+    box-shadow:0 5px 15px rgb(0, 0, 0,0.35);
+    position:relative;
+    overflow:hidden;
+    width:768px;
+    max-width:200%;
+    min-height:480px;
+  }
